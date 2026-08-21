@@ -1,15 +1,15 @@
 /* Variáveis para Temas Claro e Escuro */
 :root {
-    --bg-color: #f4f4f9;
-    --text-color: #333333;
+    --bg-color: rgb(249, 245, 244);
+    --text-color: #700f86;
     --card-bg: #ffffff;
-    --header-bg: #4CAF50;
+    --header-bg: #5e0a92;
     --header-text: #ffffff;
     --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     --border-color: #e0e0e0;
     --btn-bg: #ffffff;
-    --btn-text: #4CAF50;
-    --link-color: #4CAF50;
+    --btn-text: #3d0b4a;
+    --link-color: #3b2b79;
 }
 
 /* Alteração das variáveis no Modo Escuro */
@@ -17,13 +17,13 @@ body.dark-mode {
     --bg-color: #121212;
     --text-color: #e0e0e0;
     --card-bg: #1e1e1e;
-    --header-bg: #1b4d24;
+    --header-bg: #c90eea;
     --header-text: #ffffff;
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     --border-color: #333333;
     --btn-bg: #2d2d2d;
-    --btn-text: #81c784;
-    --link-color: #81c784;
+    --btn-text: #986ceb;
+    --link-color: #7a16f3;
 }
 
 /* Estilos Gerais */
