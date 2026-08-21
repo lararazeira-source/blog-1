@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuidados com o Cabelo: Dicas, Tendências e Novidades</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Transição suave para mudança de tema */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        /* Estilos para o Modo Escuro */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Ajuste de fundo dos cards no modo escuro (opcional/recomendado) */
+        body.dark-mode .pet-card,
+        body.dark-mode .site-header {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        /* Estilo do Botão */
+        .dark-mode-btn {
+            padding: 8px 16px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body.dark-mode .dark-mode-btn {
+            background-color: #333333;
+            color: #fff;
+            border-color: #555;
+        }
+    </style>
 </head>
 <body>
 
@@ -37,28 +77,20 @@
                 <h3>Dicas para manter o cabelo saudável</h3>
                 <p>Uma boa rotina começa pela lavagem. Escolha shampoo e condicionador de acordo com o seu tipo de cabelo e evite lavar os fios com água muito quente. Durante a lavagem, massageie suavemente o couro cabeludo com as pontas dos dedos, sem utilizar as unhas.</p>
                 <p>A hidratação também é fundamental. Utilize uma máscara adequada às necessidades do seu cabelo regularmente, principalmente quando os fios estiverem ressecados, opacos ou ásperos. Para cabelos secos e cacheados, tratamentos de hidratação e nutrição podem ajudar a melhorar a maciez e a aparência dos fios.</p>
-                <p>Outro cuidado importante é proteger o cabelo do calor. Antes de usar secador, chapinha ou modelador, aplique um protetor térmico. Sempre que possível, utilize temperaturas moderadas e evite passar várias vezes a ferramenta na mesma mecha.</p>
 
                 <h3>Como combater o frizz</h3>
                 <p>O frizz pode aparecer por diversos motivos, incluindo umidade, ressecamento, atrito e danos à fibra capilar. Para ajudar a controlar o problema, evite esfregar os cabelos com a toalha após o banho. Prefira pressionar delicadamente os fios para retirar o excesso de água.</p>
-                <p>Produtos finalizadores, cremes e óleos capilares também podem ajudar a melhorar a aparência do cabelo. Porém, é importante utilizar uma quantidade adequada para não deixar os fios pesados ou oleosos.</p>
 
                 <h3>Cuidados com cabelos cacheados e crespos</h3>
-                <p>Cabelos cacheados e crespos geralmente precisam de bastante atenção à hidratação e à definição. Evite pentear os fios secos quando isso provocar quebra ou perda excessiva da definição. O desembaraço pode ser feito durante a lavagem ou com os cabelos úmidos, utilizando um produto que facilite o processo.</p>
-                <p>A técnica de finalização também pode fazer diferença. Cremes, géis e outros finalizadores podem ser usados para definir os cachos, controlar o frizz e prolongar a aparência do penteado.</p>
+                <p>Cabelos cacheados e crespos geralmente precisam de bastante atenção à hidratação e à definição. Evite pentear os fios secos quando isso provocar quebra ou perda excessiva da definição.</p>
 
                 <h3>Novidades e tendências para os cabelos</h3>
                 <p>Uma das principais novidades no universo capilar é a busca por rotinas mais personalizadas. Em vez de utilizar muitos produtos sem necessidade, a tendência é escolher tratamentos de acordo com as características e necessidades reais dos fios.</p>
-                <p>Também estão ganhando espaço os cuidados com o couro cabeludo. A atenção não está mais apenas no comprimento: manter o couro cabeludo limpo e bem cuidado é uma parte importante da rotina capilar.</p>
-                <p>Outra tendência é a valorização da textura natural dos cabelos. Ondas, cachos e volumes naturais estão cada vez mais presentes nos penteados, incentivando as pessoas a conhecerem melhor seus próprios fios e a reduzirem procedimentos que possam causar danos.</p>
-                <p>Produtos multifuncionais também estão cada vez mais populares. Eles combinam diferentes benefícios em uma única fórmula, como hidratação, proteção térmica, controle de frizz e proteção contra fatores externos.</p>
 
                 <h3>Cuide dos cabelos também durante a noite</h3>
                 <p>Os cuidados não precisam terminar antes de dormir. Prender o cabelo de maneira muito apertada pode causar tensão e quebra. Para cabelos longos, uma opção é utilizar penteados mais soltos e confortáveis.</p>
-                <p>Também é possível reduzir o atrito durante o sono utilizando tecidos mais suaves para o cabelo. Esse cuidado pode ser especialmente interessante para fios cacheados, crespos, secos ou fragilizados.</p>
 
                 <h3>Uma rotina simples faz diferença</h3>
-                <p>Não é necessário ter dezenas de produtos para cuidar bem dos cabelos. O mais importante é manter uma rotina consistente:</p>
                 <ul>
                     <li>Lave os cabelos de acordo com a necessidade do couro cabeludo.</li>
                     <li>Use condicionador no comprimento e nas pontas.</li>
@@ -73,14 +105,25 @@
 
                 <h3>Beleza começa com cuidado</h3>
                 <p>Cabelos bonitos não dependem apenas de tendências ou produtos caros. Uma rotina adequada, bons hábitos e atenção às necessidades individuais podem fazer uma grande diferença.</p>
-                <p>A melhor tendência é aquela que permite que você se sinta bem com o seu próprio cabelo. Seja liso, ondulado, cacheado, crespo, curto, longo, natural ou colorido, todo cabelo merece cuidados que respeitem sua individualidade.</p>
                 <p><em>Cuide, experimente, descubra o que funciona para você e transforme o cuidado com os cabelos em um momento de autoestima e bem-estar.</em></p>
             </div>
         </article>
 
     </main>
 
-    <!-- Script JavaScript -->
-    <script src="script.js"></script>
+    <!-- Script JavaScript para funcionalidade do Modo Escuro -->
+    <script>
+        const toggleBtn = document.getElementById('toggle-dark-mode');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeText = document.getElementById('theme-text');
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            themeIcon.textContent = isDarkMode ? '☀️' : '🌙';
+            themeText.textContent = isDarkMode ? 'Modo Claro' : 'Modo Escuro';
+        });
+    </script>
 </body>
-</html>salvar
+</html>
