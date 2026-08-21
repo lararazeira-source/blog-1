@@ -1,25 +1,60 @@
-<button id="likeButton">
-  ❤️ Curtir (<span id="likeCount">0</span>)
-</button>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog dos Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<script>
-  let curtido = false;
-  let curtidas = 0;
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1>Blog dos Pets</h1>
+            <p>Acompanhe histórias, dicas e novidades sobre o mundo dos pets!</p>
+            
+            <!-- Botão de Alternar Modo Escuro -->
+            <button id="toggle-dark-mode" class="dark-mode-btn">
+                <span id="theme-icon">🌙</span> <span id="theme-text">Modo Escuro</span>
+            </button>
+        </div>
+    </header>
 
-  const botao = document.getElementById("likeButton");
-  const contador = document.getElementById("likeCount");
+    <!-- Conteúdo Principal -->
+    <main class="container">
 
-  botao.addEventListener("click", () => {
-    if (!curtido) {
-      curtidas++;
-      curtido = true;
-      botao.style.color = "red";
-    } else {
-      curtidas--;
-      curtido = false;
-      botao.style.color = "";
-    }
+        <!-- Cartão do Pet 1 -->
+        <article class="pet-card">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/600x350" alt="Imagem do Pet">
+            </div>
+            <div class="card-content">
+                <h2>Rex: O Cãozinho Aventureiro</h2>
+                <p>
+                    Hoje vamos contar a história de Rex, um cachorrinho cheio de energia que adora passear no parque, correr atrás de bolinhas e fazer novos amigos!
+                </p>
+                <a href="#" class="read-more">Leia mais &rarr;</a>
+            </div>
+        </article>
 
-    contador.textContent = curtidas;
-  });
-</script>
+        <!-- Cartão do Pet 2 -->
+        <article class="pet-card">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/600x350" alt="Imagem do Pet">
+            </div>
+            <div class="card-content">
+                <h2>Mia: A Gatinha Curiosa</h2>
+                <p>
+                    Mia passa o dia explorando a casa, subindo nas prateleiras mais altas e descansando nos raios de sol da janela.
+                </p>
+                <a href="#" class="read-more">Leia mais &rarr;</a>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
